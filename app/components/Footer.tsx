@@ -127,7 +127,7 @@ export default function Footer() {
                 maxWidth: 260,
               }}
             >
-              Tu idea más ridícula, hecha software.
+              Tu idea de mierda, hecha software.
             </p>
             {/* Social */}
             <div className="flex gap-4 mt-2">

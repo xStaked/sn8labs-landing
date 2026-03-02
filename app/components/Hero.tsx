@@ -164,7 +164,7 @@ export default function Hero() {
               color: '#F5F5F5',
             }}
           >
-            Tu idea más ridícula,
+            Tu idea de mierda,
           </span>
           <span
             className="block font-black"

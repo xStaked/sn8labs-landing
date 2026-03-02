@@ -26,12 +26,12 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'SN8Labs — Tu idea más ridícula, hecha software.',
+  title: 'SN8Labs — Tu idea de mierda, hecha software.',
   description:
     'Agencia de software sin corbata. Construimos landings, apps móviles, automatizaciones y marca blanca. Sin PowerPoints. Con deploy.',
   keywords: ['agencia de software', 'desarrollo web', 'apps móviles', 'automatizaciones', 'Colombia'],
   openGraph: {
-    title: 'SN8Labs — Tu idea más ridícula, hecha software.',
+    title: 'SN8Labs — Tu idea de mierda, hecha software.',
     description: 'Sin juicios. Sin corbata. Con deploy.',
     type: 'website',
   },
