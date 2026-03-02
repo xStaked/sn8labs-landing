@@ -313,7 +313,7 @@ const CARDS = [
     number: '01',
     title: 'Landings & Web',
     desc: 'Desde una landing de conversión hasta un e-commerce completo. Diseño, código y deploy.',
-    price: 'Desde $200K COP',
+    price: 'Landings desde $200K · E-commerce desde $1.3M COP',
     Artifact: CodeBuilderCard,
   },
   {
