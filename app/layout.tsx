@@ -30,6 +30,11 @@ export const metadata: Metadata = {
   description:
     'Agencia de software sin corbata. Construimos landings, apps móviles, automatizaciones y marca blanca. Sin PowerPoints. Con deploy.',
   keywords: ['agencia de software', 'desarrollo web', 'apps móviles', 'automatizaciones', 'Colombia'],
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'SN8Labs — Tu idea de mierda, hecha software.',
     description: 'Sin juicios. Sin corbata. Con deploy.',
