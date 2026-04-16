@@ -68,6 +68,19 @@ export default function Footer() {
           >
             Perfecto. Esas son exactamente las que más nos gustan.
           </p>
+          <p
+            className="text-sm mb-8 relative z-10"
+            style={{
+              fontFamily: 'var(--font-plus-jakarta)',
+              color: 'rgba(245,245,245,0.72)',
+              maxWidth: 540,
+              margin: '0 auto 2rem',
+              lineHeight: 1.7,
+            }}
+          >
+            Escríbenos si necesitas una landing, un MVP, una automatización con WhatsApp,
+            una app móvil o desarrollo white label para tu agencia.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
             <a
               href="https://wa.me/573248034489"
@@ -82,7 +95,7 @@ export default function Footer() {
               <MessageCircle size={18} />
               Escribirnos al WhatsApp
             </a>
-            {/* <a
+            <a
               href="mailto:hola@sn8labs.com"
               className="btn-magnetic px-8 py-4 rounded-full font-semibold text-base border"
               style={{
@@ -93,7 +106,7 @@ export default function Footer() {
               }}
             >
               hola@sn8labs.com
-            </a> */}
+            </a>
           </div>
         </div>
 
@@ -127,7 +140,7 @@ export default function Footer() {
                 maxWidth: 260,
               }}
             >
-              Tu idea de mierda, hecha software.
+              Agencia de software en Colombia. Desarrollamos productos web, automatizaciones, apps móviles y proyectos white label.
             </p>
             {/* Social */}
             <div className="flex gap-4 mt-2">

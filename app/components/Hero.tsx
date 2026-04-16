@@ -151,7 +151,7 @@ export default function Hero() {
               color: '#4D8EFF',
             }}
           >
-            // Agencia de software. Sin corbata.
+            {'// Agencia de software. Sin corbata.'}
           </span>
         </div>
 
@@ -178,16 +178,30 @@ export default function Hero() {
           </span>
         </h1>
 
+        {/* Extractable summary */}
+        <p
+          className="hero-anim mt-6 mx-auto max-w-3xl text-base md:text-lg"
+          style={{
+            fontFamily: 'var(--font-plus-jakarta)',
+            color: 'rgba(245,245,245,0.78)',
+            lineHeight: 1.7,
+          }}
+        >
+          SN8Labs es una agencia de software en Colombia que diseña y desarrolla landings,
+          sitios web, MVPs, apps móviles, automatizaciones con WhatsApp e integraciones a
+          medida para empresas, startups y agencias que necesitan salir rápido a producción.
+        </p>
+
         {/* Subtext */}
         <p
-          className="hero-anim mt-6 text-sm md:text-base"
+          className="hero-anim mt-4 text-sm md:text-base"
           style={{
             fontFamily: 'var(--font-space-mono)',
             color: 'rgba(245,245,245,0.45)',
             letterSpacing: '0.02em',
           }}
         >
-          {'// sin juicios. sin corbata. con deploy.'}
+          {'// software a medida. automatizaciones. marca blanca. con deploy.'}
         </p>
 
         {/* CTAs */}

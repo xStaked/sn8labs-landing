@@ -1,0 +1,24 @@
+SN8Labs
+
+SN8Labs is a software agency based in Colombia. We design and build landing pages, websites, MVPs, mobile apps, WhatsApp automations, API integrations, and white-label software projects for agencies.
+
+Primary audience:
+- Businesses that need software delivered fast
+- Startups validating an MVP
+- Agencies outsourcing technical execution under white label terms
+
+Core services:
+- Landing pages and websites
+- Mobile app development
+- WhatsApp automations and integrations
+- White-label development for agencies
+
+Key pages:
+- https://sn8labs.com/
+- https://sn8labs.com/#servicios
+- https://sn8labs.com/#precios
+- https://sn8labs.com/#faq
+
+Contact:
+- WhatsApp: https://wa.me/573248034489
+- Email: hola@sn8labs.com

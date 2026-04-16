@@ -5,7 +5,7 @@ import { useState } from 'react'
 const TIERS = [
   {
     name: 'Starter',
-    tagline: 'Para entrar al juego.',
+    tagline: 'Para validar una idea o lanzar una landing rápido.',
     price: '$200,000',
     unit: 'COP',
     badge: null,
@@ -22,7 +22,7 @@ const TIERS = [
   },
   {
     name: 'Build',
-    tagline: 'El más pedido. Por algo será.',
+    tagline: 'Para empresas que necesitan un sitio sólido y medible.',
     price: '$700,000',
     unit: 'COP',
     badge: 'Más pedido',
@@ -40,7 +40,7 @@ const TIERS = [
   },
   {
     name: 'Scale',
-    tagline: 'Cuando ya no es un experimento.',
+    tagline: 'Para productos que necesitan app, backend y automatización.',
     price: '$2,500,000',
     unit: 'COP',
     badge: null,
@@ -90,7 +90,7 @@ export default function Pricing() {
             className="mt-4 text-base max-w-md mx-auto"
             style={{ fontFamily: 'var(--font-plus-jakarta)', color: 'rgba(245,245,245,0.5)' }}
           >
-            Sin "contáctanos para saber el precio". Si lo ponemos aquí es porque lo cumplimos.
+            Precios de referencia para desarrollo web, MVPs y software a medida. Si lo ponemos aquí es porque lo cumplimos.
           </p>
         </div>
 

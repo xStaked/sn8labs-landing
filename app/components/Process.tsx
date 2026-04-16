@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger)
 /* ── Chat artifact (Card 01) ──────────────────────── */
 function ChatArtifact() {
   const msgs = [
-    { user: true,  text: 'quiero una app para medir quién es más gay entre dos políticos con Python' },
-    { user: false, text: 'dale, ¿necesitas que grafique los resultados también?' },
-    { user: true,  text: 'exactamente eso' },
+    { user: true,  text: 'quiero automatizar leads de WhatsApp y montarlo rápido' },
+    { user: false, text: 'dale, ¿también conectamos CRM y notificaciones?' },
+    { user: true,  text: 'sí, eso mismo' },
     { user: false, text: 'cotizando... dame 2 minutos 🧑‍💻' },
   ]
   return (

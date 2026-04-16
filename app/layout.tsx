@@ -4,6 +4,8 @@ import './globals.css'
 import NoiseOverlay from './components/NoiseOverlay'
 import CustomCursor from './components/CustomCursor'
 
+const siteUrl = 'https://sn8labs.com'
+
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -26,20 +28,50 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'SN8Labs — Tu idea de mierda, hecha software.',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'SN8Labs | Agencia de software, automatizaciones y MVPs en Colombia',
+    template: '%s | SN8Labs',
+  },
   description:
-    'Agencia de software sin corbata. Construimos landings, apps móviles, automatizaciones y marca blanca. Sin PowerPoints. Con deploy.',
-  keywords: ['agencia de software', 'desarrollo web', 'apps móviles', 'automatizaciones', 'Colombia'],
+    'SN8Labs es una agencia de software en Colombia que diseña y desarrolla landings, sitios web, MVPs, apps móviles, automatizaciones con WhatsApp e integraciones a medida para empresas y agencias.',
+  keywords: [
+    'agencia de software',
+    'desarrollo web en colombia',
+    'desarrollo de mvp',
+    'automatizaciones con whatsapp',
+    'apps móviles',
+    'marca blanca para agencias',
+    'desarrollo de software a medida',
+  ],
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
     apple: '/favicon.svg',
   },
   openGraph: {
-    title: 'SN8Labs — Tu idea de mierda, hecha software.',
-    description: 'Sin juicios. Sin corbata. Con deploy.',
+    title: 'SN8Labs | Software a medida, automatizaciones y MVPs',
+    description:
+      'Desarrollamos software a medida, landings, apps móviles, automatizaciones con WhatsApp y soluciones white label para agencias.',
     type: 'website',
+    url: siteUrl,
+    siteName: 'SN8Labs',
+    locale: 'es_CO',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SN8Labs | Agencia de software en Colombia',
+    description:
+      'Landings, sitios web, MVPs, apps móviles, automatizaciones y marca blanca para agencias.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  category: 'technology',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

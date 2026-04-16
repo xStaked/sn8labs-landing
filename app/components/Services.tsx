@@ -107,6 +107,7 @@ function CodeBuilderCard() {
 /* ── Card 2: Phone frame ──────────────────────────── */
 function PhoneCard() {
   const [phase, setPhase] = useState(0)
+  const phaseResetKey = phase === 0
 
   useEffect(() => {
     const timers = [
@@ -116,7 +117,7 @@ function PhoneCard() {
       setTimeout(() => setPhase(0), 5500),
     ]
     return () => timers.forEach(clearTimeout)
-  }, [phase === 0 ? 0 : -1])
+  }, [phaseResetKey])
 
   return (
     <div className="flex justify-center items-center h-48">
@@ -194,6 +195,7 @@ const TERMINAL_LINES = [
 
 function TerminalCard() {
   const [visibleLines, setVisibleLines] = useState<number[]>([])
+  const shouldRestart = visibleLines.length === 0
 
   useEffect(() => {
     const timers = TERMINAL_LINES.map((l, i) =>
@@ -201,7 +203,7 @@ function TerminalCard() {
     )
     const reset = setTimeout(() => setVisibleLines([]), TERMINAL_LINES[TERMINAL_LINES.length - 1].delay + 2000)
     return () => { timers.forEach(clearTimeout); clearTimeout(reset) }
-  }, [visibleLines.length === 0 ? 0 : -1])
+  }, [shouldRestart])
 
   return (
     <div
@@ -312,28 +314,28 @@ const CARDS = [
   {
     number: '01',
     title: 'Landings & Web',
-    desc: 'Desde una landing de conversión hasta un e-commerce completo. Diseño, código y deploy.',
+    desc: 'Diseñamos y desarrollamos landing pages, sitios corporativos y e-commerce enfocados en conversión, velocidad y despliegue rápido.',
     price: 'Landings desde $200K · E-commerce desde $1.3M COP',
     Artifact: CodeBuilderCard,
   },
   {
     number: '02',
     title: 'Apps Móviles',
-    desc: 'iOS y Android. Apps que funcionan, escalan y no te hacen quedar mal con tus clientes.',
+    desc: 'Creamos apps móviles para iOS y Android con backend, panel administrativo e integraciones cuando el producto necesita operar de verdad.',
     price: 'Desde $2.5M COP',
     Artifact: PhoneCard,
   },
   {
     number: '03',
     title: 'Automatizaciones & Bots',
-    desc: 'WhatsApp, Telegram, CRMs, APIs. Dejamos que los robots trabajen mientras tú duermes.',
+    desc: 'Automatizamos ventas, soporte y operación con WhatsApp, CRMs, APIs, bots y flujos conectados a tus herramientas actuales.',
     price: 'A la medida',
     Artifact: TerminalCard,
   },
   {
     number: '04',
     title: 'Marca Blanca',
-    desc: 'Usas nuestro código, tu cliente ve tu marca. Discreción total. Código real.',
+    desc: 'Entregamos desarrollo white label para agencias que quieren ejecutar proyectos web o software bajo su propia marca.',
     price: 'Hablemos',
     Artifact: ClassifiedCard,
   },
@@ -366,9 +368,20 @@ export default function Services() {
             >
               Sin PowerPoints.
             </h2>
+            <p
+              className="mt-4 max-w-2xl text-sm md:text-base"
+              style={{
+                fontFamily: 'var(--font-plus-jakarta)',
+                color: 'rgba(245,245,245,0.68)',
+                lineHeight: 1.7,
+              }}
+            >
+              Servicios principales de SN8Labs: desarrollo web, creación de MVPs, apps móviles,
+              automatizaciones con WhatsApp e integraciones a medida.
+            </p>
           </div>
           <p style={{ color: 'rgba(245,245,245,0.5)', maxWidth: 360, fontFamily: 'var(--font-plus-jakarta)', fontSize: 15, lineHeight: 1.7 }}>
-            Construimos software real para ideas reales — y también para las que parecen ridículas hasta que están en producción.
+            Construimos software real para empresas que necesitan validar, vender, automatizar o entregar proyectos bajo su propia marca.
           </p>
         </div>
 

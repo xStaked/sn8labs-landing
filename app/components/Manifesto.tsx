@@ -119,10 +119,10 @@ export default function Manifesto() {
         {/* Stats row */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { value: '40K+', label: 'usuarios en producción' },
-            { value: '2am',  label: 'deployamos sin quejarnos' },
-            { value: '0',    label: 'PowerPoints entregados' },
-            { value: '100%', label: 'código real, sin relleno' },
+            { value: 'Web', label: 'landings, sitios y e-commerce' },
+            { value: 'Apps',  label: 'móviles y dashboards' },
+            { value: 'Bots',    label: 'automatizaciones e integraciones' },
+            { value: 'WL', label: 'white label para agencias' },
           ].map(({ value, label }) => (
             <div key={label} className="manifesto-col flex flex-col gap-1">
               <span
