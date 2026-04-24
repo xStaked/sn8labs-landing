@@ -99,7 +99,7 @@ export default function Pricing() {
           {TIERS.map((tier) => (
             <div
               key={tier.name}
-              className="relative flex flex-col rounded-[1.75rem] p-7 transition-all duration-300"
+              className={`relative flex flex-col rounded-[1.75rem] p-7 transition-all duration-300 ${tier.featured ? 'md:scale-[1.03]' : ''}`}
               style={{
                 background: tier.featured ? '#0055FF' : '#1A1A2E',
                 border: tier.featured
@@ -112,7 +112,6 @@ export default function Pricing() {
                   : hoveredTier === tier.name
                     ? '0 0 40px rgba(0,85,255,0.2)'
                     : 'none',
-                transform: tier.featured ? 'scale(1.03)' : undefined,
               }}
               onMouseEnter={() => !tier.featured && setHoveredTier(tier.name)}
               onMouseLeave={() => !tier.featured && setHoveredTier(null)}

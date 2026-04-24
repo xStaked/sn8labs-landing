@@ -398,7 +398,7 @@ export default function Services() {
               }}
             >
               {/* Card header */}
-              <div className="flex items-start justify-between">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
                 <div>
                   <span
                     className="text-xs font-medium"
@@ -414,7 +414,7 @@ export default function Services() {
                   </h3>
                 </div>
                 <span
-                  className="text-xs px-3 py-1 rounded-full shrink-0"
+                  className="text-xs px-3 py-1 rounded-full w-fit"
                   style={{
                     fontFamily: 'var(--font-space-mono)',
                     background: 'rgba(0,85,255,0.12)',

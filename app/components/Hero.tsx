@@ -126,17 +126,18 @@ export default function Hero() {
 
       {/* Floating glow blob */}
       <div
-        className="blob absolute rounded-full pointer-events-none"
+        className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden"
         aria-hidden="true"
-        style={{
-          width: 600,
-          height: 600,
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%,-50%)',
-          background: 'radial-gradient(circle, rgba(0,85,255,0.18) 0%, transparent 70%)',
-        }}
-      />
+      >
+        <div
+          className="blob rounded-full"
+          style={{
+            width: 'min(600px, 120vw)',
+            height: 'min(600px, 120vw)',
+            background: 'radial-gradient(circle, rgba(0,85,255,0.18) 0%, transparent 70%)',
+          }}
+        />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
